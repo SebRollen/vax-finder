@@ -1,0 +1,20 @@
+[package]
+name = "vax-finder"
+version = "0.1.0"
+authors = ["Sebastian Rollen <rollenseb@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.40"
+chrono = { version = "0.4.19", features = ["serde"] }
+dotenv = "0.15.0"
+env_logger = "0.8.3"
+lettre = "0.9.2"
+lettre_email = "0.9.2"
+log = "0.4.14"
+reqwest = "0.11.2"
+serde = { version = "1.0.125", features = ["derive"] }
+serde_json = "1.0.64"
+tokio = { version = "1.4.0", features = ["macros", "rt-multi-thread"] }
